@@ -15,7 +15,7 @@ odf <- function(file, gene_name) {
   names <- c()
   for(i in 1:length(returns)) {
     names <- cbind(names, returns[[i]][1])
-    returns[[i]] <- returns[[i]][2:length(returns[[i]])]
+    returns[[i]] <- returns[[i]][3:length(returns[[i]])]
   }
   names(returns) <- names
   print(names)
